@@ -120,7 +120,7 @@ public:
      @discussion
      @return this resident's health condition
      */
-    state getCondition();
+    state getCondition() const;
     
     
     /**
@@ -130,7 +130,7 @@ public:
      @discussion
      @return this resident's home location
      */
-    Square * getHomeLoc();
+    Square * getHomeLoc() const;
     
     
     /**
@@ -140,7 +140,7 @@ public:
      @discussion
      @return this resident's current location
      */
-    Square * getLoc();
+    Square * getLoc() const;
     
     /**
      @brief Retrieves the previous location
@@ -149,7 +149,7 @@ public:
      @discussion
      @return this resident's previous location
      */
-    Square *getPreviousLoc();
+    Square *getPreviousLoc() const;
 
     int getDirectionOfMoving();
     
@@ -163,7 +163,7 @@ public:
      @return the percentage of time this resident spend at
      home
      */
-    float getPercentTravelling();
+    float getPercentTravelling() const;
     
     
     /**
@@ -174,7 +174,7 @@ public:
      @discussion
      @return the percentage chance this resident gets infected
      */
-    float getPercentInfected();
+    float getPercentInfected() const;
     
     float getPercentDead();
     
@@ -188,7 +188,7 @@ public:
      @return true if this resident has the immunity against
      the disease, false otherwise
      */
-    bool getHasImmunity();
+    bool getHasImmunity() const;
     
     
     /**
@@ -263,7 +263,7 @@ public:
      @discussion
      @return true if this resident is travelling around
      */
-    bool isTravelling();
+    bool isTravelling() const;
     
     /**
      @brief Returns true if this resident is going home
@@ -272,7 +272,7 @@ public:
      @discussion
      @return true if this resident is on the way home
      */
-    bool isGoingHome();
+    bool isGoingHome() const;
     
     /**
      @brief Returns true if this resident is at home
@@ -281,9 +281,9 @@ public:
      @discussion
      @return true if this resident is at home
      */
-    bool isAtHome();
+    bool isAtHome() const;
     
-    int getStateCount();
+    int getStateCount() const;
     void incrementStateCount();
     void resetStateCount();
     

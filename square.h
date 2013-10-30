@@ -118,7 +118,7 @@ public:
      @discussion This method is used to get the x-coordinate of this square
      @return the x-coordinate
      */
-    int getX();
+    int getX() const;
     
     /**
      @brief Retrieves the y-coordinate.
@@ -127,7 +127,7 @@ public:
      @discussion This method is used to get the y-coordinate of this square
      @return the y-coordinate
      */
-    int getY();
+    int getY() const;
     
     /**
      @brief Returns true if this square is a house
@@ -135,7 +135,7 @@ public:
     /**
      @return true if this square is a house, false if it is a street
      */
-    bool isHouse();
+    bool isHouse() const;
     
     /**
      @brief Returns true if this square is a medium for the diease transmission
@@ -146,7 +146,7 @@ public:
      on that square, they can get infected.
      @return true if an infected resident is present on this square
      */
-    bool isInfected();
+    bool isInfected() const;
     
     /**
      @brief Returns a Square pointer at the direction
@@ -156,7 +156,7 @@ public:
      @param direction 0 for top, 1 for right, 2 for bottom, 3 for left
      @return the pointer to the street at this direction
      */
-    Square *getNext(int direction);
+    Square *getNext(int direction) const;
     
     /**
      @brief Ramdomly selected one square that is connected to current square, 
@@ -167,7 +167,7 @@ public:
      @return the pointer to the randomly selected square that is connected to
      current square
      */
-    Square *getRandomMove();
+    Square *getRandomMove() const;
     
     /**
      @brief Sets the state (infective or not) for this street

@@ -15,13 +15,15 @@ SOURCES += main.cpp\
     grid.cpp \
     square.cpp \
     resident.cpp \
-    simulator.cpp
+    simulator.cpp \
+    disease.cpp
 
 HEADERS  += epidemicsimulator.h \
     grid.h \
     square.h \
     resident.h \
-    simulator.h
+    simulator.h \
+    disease.h
 
 FORMS    += epidemicsimulator.ui
 

@@ -68,19 +68,19 @@ Square *Resident::getBestMove(){
     
 }
 
-state Resident::getCondition(){
+state Resident::getCondition() const{
     return con;
 }
 
-Square * Resident::getHomeLoc(){
+Square * Resident::getHomeLoc() const{
     return homeLoc;
 }
 
-Square * Resident::getLoc(){
+Square * Resident::getLoc() const{
     return loc;
 }
 
-Square *Resident::getPreviousLoc(){
+Square *Resident::getPreviousLoc() const{
     return previousLoc;
 }
 
@@ -97,11 +97,11 @@ int Resident::getDirectionOfMoving(){
         return 4; /*not moving*/
 }
 
-float Resident::getPercentInfected(){
+float Resident::getPercentInfected() const{
     return pctInfected;
 }
 
-bool Resident::getHasImmunity(){
+bool Resident::getHasImmunity() const{
     return hasImmunity;
 }
 
@@ -167,15 +167,15 @@ void Resident::resetStateCount(){
     stateCount = 0;
 }
 
-bool Resident::isTravelling(){
+bool Resident::isTravelling() const{
     return travelCount < travelCountLimit && !isAtHome();
 }
 
-bool Resident::isGoingHome(){
+bool Resident::isGoingHome() const{
     return travelCount == travelCountLimit;
 }
 
-bool Resident::isAtHome(){
+bool Resident::isAtHome() const{
     return stayHomeCount;
 }
 

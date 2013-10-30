@@ -28,19 +28,19 @@ Square* Square::getLoc(){
     return this;
 }
 
-int Square::getX(){
+int Square::getX() const{
     return x;
 }
 
-int Square::getY(){
+int Square::getY() const{
     return y;
 }
 
-bool Square::isHouse(){
+bool Square::isHouse() const{
     return house;
 }
 
-bool Square:: isInfected(){
+bool Square:: isInfected() const{
     return infective;
 }
 
@@ -56,11 +56,11 @@ void Square::setNext(Square *top, Square *right, Square *bottom, Square *left){
 }
 
 
-Square* Square::getNext(int direction){
+Square* Square::getNext(int direction) const{
     return next[direction];
 }
 
-Square* Square::getRandomMove(){
+Square* Square::getRandomMove() const{
     Square *tmpSquare;
     while(true){
         tmpSquare = next[rand() % 4];
