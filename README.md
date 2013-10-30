@@ -15,3 +15,9 @@ Setup Instruction: (currently Mac only, will add support for Linux)
 
 
 
+
+TODO:
+- clean up
+
+wild idea:
+- monster
